@@ -1,0 +1,24 @@
+{
+  "model":
+  {
+    "fc_model":
+    {
+      "sizes": [512,256,128],
+      "input_norm": false,
+      "activation": "ELU",
+      "dropout": 0.1
+    },
+    "transformer":
+    {
+      "N": 1,
+      "d_ff": 128,
+      "h": 4,
+      "positional_encoding": {"strategy": "fixed", "max_indices": 20},
+      "dropout": 0.3
+    },
+    "post_model":
+    {
+      "d_output": 1
+    }
+  }
+}
